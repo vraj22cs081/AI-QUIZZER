@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const quizSchema = new mongoose.Schema({
-    user: {                    // Changed from username to user
+    user: {                    
         type: String,
         required: true,
     },
@@ -15,12 +15,12 @@ const quizSchema = new mongoose.Schema({
     },
     questions: [
         {
-            questionText: String,   // Changed to match aiEngine.js
+            questionText: String,   
             options: [String],
             correctAnswer: String
         }
     ],
-    createdAt: {              // Changed from completedDate
+    createdAt: {              
         type: Date,
         default: Date.now,
     }

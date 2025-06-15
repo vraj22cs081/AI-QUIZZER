@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
-    email: String, // Optional, can be removed if not needed
+    email: String, 
     createdAt: {
         type: Date,
         default: Date.now,
