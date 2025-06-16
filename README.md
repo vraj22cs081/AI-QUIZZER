@@ -4,6 +4,28 @@ AI-QUIZZER is a Node.js-based backend service for generating AI-based quizzes, a
 As ,such sql is not used I have use mongo db refers models for more information
 ---
 
+
+# 📁 Available Scripts
+
+In the `backend` directory, you can run:
+
+# `npm start`
+
+Runs the backend server in development mode.  
+It connects to MongoDB Atlas and listens on the configured port (default: `9090`).
+
+```bash
+npm start
+
+ Step 1: Build the Docker image
+docker build -t ai-quizzer .
+
+Step 2: Run the container
+docker run -p 9090:9090 \
+-e MONGO_URI="your_connection_string" \
+-e JWT_SECRET="your_secret_key" \
+ai-quizzer
+
 # 🌐 Live Deployment
 
 🔗 [https://ai-quizzer-production.up.railway.app](https://ai-quizzer-production.up.railway.app)
